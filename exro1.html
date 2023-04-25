@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+<body>
+    <p id="1">2</p>
+    <p id="2">3</p>
+    <p id="resp">?</p>
+    <a href="/index.html">Link para index</a>
+</body>
+<script>
+    const p1 = document.getElementById('1');
+    const p2 = document.getElementById('2');
+    const res = document.getElementById('resp');
+    const soma = Number(p1.innerText) + Number(p2.innerText);
+    res.innerText = "A soma dos elementos da: " + soma;
+</script>
+</html>
