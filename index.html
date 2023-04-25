@@ -11,7 +11,7 @@
         <h1>DCC121 ATV6</h1>
     </header>
     <main>
-
+        <p id="saida">A pessoa NOME tem X anos!</p>
     </main>
     <footer>
         &copy; Vitor Leal - 2023
@@ -32,5 +32,8 @@
     console.log("Envelhecendo...");
     pessoa.envelhecer();
     console.table(pessoa);
+    const pId = document.getElementById('saida');
+    pId.innerText = `A pessoa chama ${pessoa.nome} e tem ${pessoa.idade} anos, e foi selecionada pelo id`;
+
 </script>
 </html>
